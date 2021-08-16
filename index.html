@@ -597,62 +597,41 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- ******************************************************* M O D A L ************************************************************************ -->
+
+    <div class="backdrop is-hidden" data-modal data-modal-close>
         <div class="modal">
 
-            <button type="button" class="modal-button" data-modal-close>
-                <svg width="11" height="11">
+            <button type="button" class="modal-button">
+                <svg width="44" height="44">
                     <use href="./images/decoration/symbol-defs.svg#close"></use>
                 </svg>
             </button>
-            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
-            <form class="modal-form">
-                <label class="modal-label">
-                    Имя
-                    <span class="modal-box">
-                        <input class="modal-fields" type="text" name="user-name" />
-                        <svg class="modal-icon">
-                            <use href="./images/decoration/icons.svg#modal-name"></use>
-                        </svg>
-                    </span>
-                </label>
-
-                <label class="modal-label">
-                    Телефон
-                    <span class="modal-box">
-                        <input class="modal-fields" type="tel" name="user-tel" />
-                        <svg class="modal-icon">
-                            <use href="./images/decoration/icons.svg#modal-tell"></use>
-                        </svg>
-                    </span>
-                </label>
-
-                <label class="modal-label">
-                    Почта
-                    <span class="modal-box">
-                        <input class="modal-fields" type="email" name="user-email" />
-                        <svg class="modal-icon">
-                            <use href="./images/decoration/icons.svg#modal-envel"></use>
-                        </svg>
-                    </span>
-                </label>
-
-                <label class="modal-label">Комментарий
-                    <textarea name="comment" class="modal-comment" cols="30" rows="10"
-                        placeholder="Введите текст"></textarea>
-                </label>
+            <button type="button" class="modal-button-right">
+                <svg width="44" height="44">
+                    <use href="./images/decoration/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
 
 
-                <input class="modal-checkbox visually-hidden" type="checkbox" name="agreement" value="agreement"
-                    id="accept-policy">
-                <label class="modal-agreement" for="accept-policy">
-                    Соглашаюсь с рассылкой и принимаю&nbsp;
-                    <a href="#" class="agreement-link">Условия договора</a>
-                </label>
-                <button type="submit" class="submit-button">Отправить</button>
 
-            </form>
+            <picture>
+
+                <source media="(min-width: 1200px)"
+                    srcset="./images/gp/main-more-photo-06.jpg 1x, ./images/gp/main-more-photo-06@2x.jpg 2x">
+
+                <source media="(min-width: 768px)"
+                    srcset="./images/team/tarasov-tab.jpg 1x, ./images/team/tarasov-tab@2x.jpg 2x">
+
+                <source media="(min-width: 280px)"
+                    srcset="./images/team/tarasov-mob.jpg 1x, ./images/team/tarasov-mob@2x.jpg 2x">
+
+                <img class="picture" src="./images/team/tarasov.jpg" alt="фотография Николая Тарасова">
+            </picture>
+           
+
+           
 
         </div>
     </div>
